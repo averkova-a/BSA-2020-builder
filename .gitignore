@@ -2,5 +2,6 @@
 /lib/driver
 debug.log
 debug.json
+testData.json
 /output/
 /allure-results/
