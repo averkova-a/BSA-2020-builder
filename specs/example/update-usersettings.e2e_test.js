@@ -15,20 +15,17 @@ const usersettingsSteps = new usersettingsActions();
 
 const credentials = require('./testData.json');
 
-const notification = $('div.toast-bottom-right.toast-container');
-
-        
-
 
 describe('User_flow_update_usersettings'), () => {
-
+    
     beforeEach(() => {
         browser.maximizeWindow();
         browser.url(credentials.appUrl);
     });
-
-
+    
+    
     it('update usersettings', () => {
+        const notification = $('div.toast-bottom-right.toast-container');
         landingSteps.goToSignIn();
         signInSteps.signInWithGithub();
         browser.pause(3000);
