@@ -24,7 +24,7 @@ describe("User flows", () => {
         browser.reloadSession();
     });
 
-    it("Should log in with Github credentials", () => {
+    it("Should create and build a project with URL", () => {
         // Sign in
         mainSteps.signIn();
         signInSteps.signInGithub();
