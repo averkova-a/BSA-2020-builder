@@ -13,7 +13,7 @@ const usersettingsActions = require ('./usersettings/usersettings_pa.js');
 const usersettingsSteps = new usersettingsActions();
 
 
-const credentials = require('./testData.json');
+const credentials = require('BSA-2020-BUILDER/testData.json');
 
 const notification = $('div.toast-bottom-right.toast-container');
 

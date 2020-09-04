@@ -3,18 +3,7 @@ const page = newusersettings ();
 
 class usersettingsActions {
 
-    
-    clickmenudropdown() {
-        page.menudropdown.waitforDisplayed(2000);
-        page.menudropdown.click();
-    };
-
-    clicksettings() {
-        page.settings.waitfordisplayed(2000);
-        page.settings.click();
-
-    }   
-       
+           
     enterfirstName(value) {
         page.firstNameInput.clearValue();
         page.firstNameInput.setValue(value);
