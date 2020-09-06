@@ -1,5 +1,5 @@
 const usersettings = require('../usersettings/usersettings_po.js');
-const page = newusersettings();
+const page = new usersettings();
 
 class usersettingsActions {
 

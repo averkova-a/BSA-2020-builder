@@ -6,7 +6,7 @@ class menuActions {
     _moveToMenu() {
         menu.dropdown.waitForDisplayed(10000);
         menu.dropdown.moveTo();
-    }
+    };
 
 
     navigateToSettings() {

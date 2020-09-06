@@ -6,24 +6,21 @@ const landingSteps = new LandingPageActions();
 const SignInActions = require('./signin/signin_pa.js');
 const signInSteps = new SignInActions();
 
-const menuActions = require ('./menu/menu_pa.js');
+const menuActions = require('./menu/menu_pa.js');
 const menuSteps = new menuActions();
 
-const usersettingsActions = require ('./usersettings/usersettings_pa.js');
+const usersettingsActions = require('./usersettings/usersettings_pa.js');
 const usersettingsSteps = new usersettingsActions();
 
 
-const credentials = require('BSA-2020-BUILDER/testData.json');
+const credentials = require('F:/BuildeR/testData2.json');
 
-<<<<<<< HEAD:specs/example/update_usersettings.e2e_test.js
-const notification = require('./common/notification/notification.js');
+const notificationEI = require('./common/notification/notification.js');
 
         
 
-=======
->>>>>>> 6ee2693dc0301671473a9a6b6a14ba3dbf9dab09:specs/example/update-usersettings.e2e_test.js
 
-describe('User_flow_update_usersettings'), () => {
+describe('User_flow_update_usersettings', () => {
     
     beforeEach(() => {
         browser.maximizeWindow();
@@ -50,5 +47,5 @@ describe('User_flow_update_usersettings'), () => {
         waitForNotificationToDissapear();
 
     })
-}
+})
 

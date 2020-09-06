@@ -4,7 +4,6 @@ class MenuPage {
     get settings () {return $('a.dropdown-item')};
  
 
-
 };
 
-module.exports = new MenuPage();
+module.exports = MenuPage;

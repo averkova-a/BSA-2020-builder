@@ -1,4 +1,4 @@
-const LandingPage = require('./LandingPage_po.js');
+const LandingPage = require('./landingpage_po.js');
 const page = new LandingPage();
 
 class LandingPageActions {
