@@ -4,4 +4,4 @@ class LandingPage {
 
 }
 
-module.exports = LandingPage;
+module.exports =  new LandingPage;

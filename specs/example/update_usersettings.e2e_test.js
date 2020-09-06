@@ -15,7 +15,7 @@ const usersettingsSteps = new usersettingsActions();
 
 const credentials = require('BSA-2020-BUILDER/testData.json');
 
-const notification = $('div.toast-bottom-right.toast-container');
+const notification = require('./common/notification/notification.js');
 
         
 
@@ -31,11 +31,7 @@ describe('User_flow_update_usersettings'), () => {
     it('update usersettings', () => {
         landingSteps.goToSignIn();
         signInSteps.signInWithGithub();
-        browser.pause(3000);
-        browser.switchWindow('Sign in to GitHub · GitHub');
         signInSteps.sigInIntoGithub(credentials.login, credentials.password);
-        browser.switchWindow('buildeR');
-        browser.pause(20000);
         menuSteps.navigateToSettings();
         usersettingsSteps.enterfirstName(credentials.firstName);
         usersettingsSteps.enterlasttName(credentials.lastName);

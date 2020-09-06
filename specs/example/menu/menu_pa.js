@@ -1,5 +1,5 @@
-const MenuPage = require ('../menu/menu_po.js');
-const menu = new MenuPage ();
+const MenuPage = require('../menu/menu_po.js');
+const menu = new MenuPage();
 
 class menuActions {
 

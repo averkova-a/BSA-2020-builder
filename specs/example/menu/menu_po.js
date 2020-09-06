@@ -7,4 +7,4 @@ class MenuPage {
 
 };
 
-module.exports = MenuPage;
+module.exports = new MenuPage();

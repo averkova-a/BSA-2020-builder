@@ -13,6 +13,14 @@ class SignInPageActions {
         page.githubLoginField.setValue(login);
         page.githubPasswordField.setValue(password);
     }
+
+    switch() {
+        page.browser.pause(3000);
+        browser.switchWindow('Sign in to GitHub · GitHub');
+        browser.switchWindow('buildeR');
+        browser.pause(20000);
+    }
+
 }
 
 module.exports = SignInPageActions;
