@@ -16,7 +16,7 @@ class SignInPageActions {
     };
 
     submitCredentials() {
-        page.commit.waitForClickable(5000);
+        page.commit.waitForDisplayed(5000);
         page.commit.click();
     }
 }
