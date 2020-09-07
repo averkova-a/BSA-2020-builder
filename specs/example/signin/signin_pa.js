@@ -19,7 +19,6 @@ class SignInPageActions {
         page.commit.waitForClickable(5000);
         page.commit.click();
     }
-
 }
 
 module.exports = SignInPageActions;

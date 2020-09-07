@@ -18,8 +18,6 @@ const credentials = require('F:/BuildeR/testData2.json');
 const notificationEI = require('./common/notification/notification.js');
 
         
-
-
 describe('User_flow_update_usersettings', () => {
     
     beforeEach(() => {
