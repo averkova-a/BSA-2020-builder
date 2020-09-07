@@ -29,10 +29,16 @@ describe('User_flow_update_usersettings', () => {
     
     
     it('update usersettings', () => {
-        const notification = $('div.toast-bottom-right.toast-container');
+        
         landingSteps.goToSignIn();
         signInSteps.signInWithGithub();
+        browser.pause(3000);
+        browser.switchWindow('Sign in to GitHub · GitHub');
         signInSteps.sigInIntoGithub(credentials.login, credentials.password);
+        signInSteps.submitCredentials();
+        browser.switchWindow(credentials.appUrl);
+        browser.pause(3000);
+
         menuSteps.navigateToSettings();
         usersettingsSteps.enterfirstName(credentials.firstName);
         usersettingsSteps.enterlasttName(credentials.lastName);

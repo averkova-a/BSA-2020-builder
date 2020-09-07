@@ -1,6 +1,6 @@
 class MenuPage {
     
-    get menudropdown () {return $('div.dropdown-menu.dropdown-menu-right')};
+    get menudropdown () {return $('a#navbarDropdown2.dropdown-toggle.nav-link')};
     get settings () {return $('a.dropdown-item')};
  
 

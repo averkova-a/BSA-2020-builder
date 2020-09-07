@@ -12,13 +12,12 @@ class SignInPageActions {
         page.githubLoginField.waitForDisplayed(5000);
         page.githubLoginField.setValue(login);
         page.githubPasswordField.setValue(password);
+        
     };
 
-    switch() {
-        page.browser.pause(3000);
-        browser.switchWindow('Sign in to GitHub · GitHub');
-        browser.switchWindow('buildeR');
-        browser.pause(20000);
+    submitCredentials() {
+        page.commit.waitForClickable(5000);
+        page.commit.click();
     }
 
 }
