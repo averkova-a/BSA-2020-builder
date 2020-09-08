@@ -13,7 +13,7 @@ const usersettingsActions = require('./usersettings/usersettings_pa.js');
 const usersettingsSteps = new usersettingsActions();
 
 
-const credentials = require('F:/BuildeR/testData2.json');
+const credentials = require('../testData.json'); //testData should be located within test folder
 
 const notificationEI = require('./common/notification/notification.js');
 
