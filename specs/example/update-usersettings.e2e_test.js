@@ -24,7 +24,8 @@ describe('User_flow_update_usersettings', () => {
         browser.maximizeWindow();
         browser.url(credentials.appUrl);
     });
-    
+
+   
     
     it('update usersettings', () => {
         
@@ -36,6 +37,10 @@ describe('User_flow_update_usersettings', () => {
         signInSteps.submitCredentials();
         browser.switchWindow(credentials.appUrl);
         browser.pause(3000);
+        
+        let elem = $('a#navbarDropdown2.dropdown-toggle.nav-link');
+        let isExisting = elem.isExisting();
+        console.log(isExisting);
 
         menuSteps.navigateToSettings();
         usersettingsSteps.enterfirstName(credentials.firstName);

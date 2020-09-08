@@ -14,10 +14,6 @@ class menuActions {
         menu.settings.waitForDisplayed(2000);
         menu.settings.click();
     }
-
-    
-
-
 }
 
 module.exports = menuActions;
