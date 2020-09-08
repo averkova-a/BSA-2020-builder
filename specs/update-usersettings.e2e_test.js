@@ -44,7 +44,7 @@ describe('User_flow_update_usersettings', () => {
 
         menuSteps.navigateToSettings();
         usersettingsSteps.enterfirstName(credentials.firstName);
-        usersettingsSteps.enterlasttName(credentials.lastName);
+        usersettingsSteps.enterlastName(credentials.lastName);
         usersettingsSteps.enterusername(credentials.username);
         usersettingsSteps.enteremail(credentials.email);
         usersettingsSteps.enterbio(credentials.bio);

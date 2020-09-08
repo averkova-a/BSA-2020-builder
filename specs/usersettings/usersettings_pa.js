@@ -29,7 +29,7 @@ class usersettingsActions {
         page.bioInput.setValue(value);
     };
 
-    savechanges() {
+    savechanges(_value) {
         page.savebtn.waitforDisplayed(2000);
         page.savebtn.click();
 
