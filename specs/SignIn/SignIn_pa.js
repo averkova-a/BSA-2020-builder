@@ -12,6 +12,8 @@ class SignInPageActions {
         page.githubLoginField.waitForDisplayed(5000);
         page.githubLoginField.setValue(login);
         page.githubPasswordField.setValue(password);
+        page.githubSubmitBtn.waitForDisplayed(5000);
+        page.githubSubmitBtn.click();
     }
 }
 
