@@ -1,0 +1,9 @@
+{
+    "mainPageURL": "https://bsa-builder.xyz/",
+    "repositoryUrl": "https://github.com/luv2144/rick-and-morty-page",
+    "projectName": "Test project",
+    "projectDescription": "qwerty",
+    "branch": "circleci-project-setup",
+    "period": "2",
+    "minutes": "4: 20"
+}
